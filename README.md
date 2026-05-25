@@ -15,8 +15,7 @@ Load unpacked from this folder, or extract the ZIP and load that folder.
 
 ## Distribution
 
-- **Free (no fee):** Load unpacked from this folder, or share `chupads-extension.zip` — see **[STORE_CHECKLIST.md](./STORE_CHECKLIST.md)**.
-- **Chrome Web Store:** Optional; requires a one-time $5 developer registration.
+- **Free (no fee):** Load unpacked from this folder, or share `chupads-extension.zip` 
 
 ## Structure
 
