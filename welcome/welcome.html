@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to ChupAds</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #0a0a0a;
+        color: #eee;
+        min-height: 100vh;
+        padding: 48px 24px;
+      }
+      .wrap {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.75rem;
+        margin-bottom: 8px;
+      }
+      h1 span {
+        color: #e53e3e;
+      }
+      .lead {
+        color: #888;
+        margin-bottom: 32px;
+        line-height: 1.5;
+      }
+      .step {
+        background: #141414;
+        border: 1px solid #222;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 16px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .num {
+        width: 32px;
+        height: 32px;
+        background: #e53e3e;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .step h2 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+      }
+      .step p {
+        color: #999;
+        font-size: 0.9rem;
+        line-height: 1.45;
+      }
+      .note {
+        background: rgba(229, 62, 62, 0.1);
+        border: 1px solid rgba(229, 62, 62, 0.3);
+        border-radius: 10px;
+        padding: 14px;
+        font-size: 0.85rem;
+        color: #ccc;
+        margin: 24px 0;
+      }
+      button {
+        background: #e53e3e;
+        color: #fff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      button:hover {
+        background: #c53030;
+      }
+      button.secondary {
+        background: transparent;
+        border: 1px solid #333;
+        color: #888;
+      }
+      .puzzle {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Welcome to Chup<span>Ads</span></h1>
+      <p class="lead">
+        ChupAds is installed and blocking ads. Pin it to your toolbar so you
+        can open stats and settings in one click.
+      </p>
+
+      <div class="note">
+        Chrome does not allow extensions to pin themselves automatically — you
+        need to pin ChupAds once (takes a few seconds).
+      </div>
+
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h2>Open the extensions menu</h2>
+          <p>
+            Click the <strong>puzzle piece</strong>
+            <span class="puzzle">🧩</span> icon in the top-right of Chrome
+            (next to your profile picture).
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h2>Pin ChupAds</h2>
+          <p>
+            Find <strong>ChupAds – Block Ads &amp; Trackers</strong> in the list
+            and click the <strong>pin</strong> icon so it stays on the toolbar.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h2>Use the icon anytime</h2>
+          <p>
+            Click the ChupAds icon to see blocked counts, toggle blocking, or
+            pick elements to hide.
+          </p>
+        </div>
+      </div>
+
+      <button type="button" id="openOptions">Open settings</button>
+      <button type="button" class="secondary" id="closeTab">Got it</button>
+    </div>
+
+    <script src="welcome.js"></script>
+  </body>
+</html>

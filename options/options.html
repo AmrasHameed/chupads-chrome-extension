@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChupAds Settings</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+        background: #0a0a0a;
+        color: #e8e8e8;
+        line-height: 1.5;
+        padding: 24px;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+      }
+      h2 {
+        font-size: 1rem;
+        margin: 24px 0 8px;
+        color: #e53e3e;
+      }
+      p,
+      li {
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+      .card {
+        background: #141414;
+        border: 1px solid #222;
+        border-radius: 10px;
+        padding: 16px;
+        margin-top: 12px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+      }
+      button {
+        margin-top: 12px;
+        padding: 10px 16px;
+        background: #e53e3e;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #c53030;
+      }
+      button.secondary {
+        background: transparent;
+        border: 1px solid #333;
+        color: #aaa;
+      }
+      #status {
+        margin-top: 10px;
+        font-size: 0.85rem;
+        color: #666;
+      }
+      a {
+        color: #e53e3e;
+      }
+      ul {
+        margin: 8px 0 0 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ChupAds Settings</h1>
+    <p>Version 1.1.0 · Manifest V3 ad blocker</p>
+
+    <div class="card">
+      <h2>Toolbar icon</h2>
+      <p>
+        To pin ChupAds: click the puzzle icon in Chrome → find ChupAds → click
+        pin. Extensions cannot pin themselves automatically.
+      </p>
+      <button type="button" class="secondary" id="showPinGuide">
+        Open pin guide
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Blocking</h2>
+      <label>
+        <input type="checkbox" id="enabled" checked />
+        Enable ad & tracker blocking
+      </label>
+      <br />
+      <label style="margin-top: 10px">
+        <input type="checkbox" id="autoUpdate" checked />
+        Automatically update filter lists every 24 hours
+      </label>
+      <button type="button" id="updateNow">Update filters now</button>
+      <p id="status">—</p>
+    </div>
+
+    <div class="card">
+      <h2>Filter lists</h2>
+      <p>Built-in rules are bundled with the extension. Optional updates fetch:</p>
+      <ul>
+        <li>EasyList</li>
+        <li>EasyPrivacy</li>
+        <li>Peter Lowe’s list</li>
+        <li>uBlock badware (GitHub)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Privacy</h2>
+      <p>
+        ChupAds blocks ads and trackers locally on your device. Filter lists may
+        be downloaded from the sources above when updates are enabled. We do not
+        collect personal data, browsing history, or sell user information.
+      </p>
+      <p style="margin-top: 10px">
+        Stats shown in the popup (blocked counts) are stored only in your
+        browser session storage and are not sent to any server.
+      </p>
+      <p style="margin-top: 10px">
+        <a href="../privacy/privacy.html" target="_blank">Full privacy policy</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Attribution</h2>
+      <p>
+        Network and cosmetic filters are derived from community lists including
+        <a href="https://easylist.to/" target="_blank" rel="noopener">EasyList</a>
+        and
+        <a href="https://easylist.to/easylist/easyprivacy.txt" target="_blank" rel="noopener">EasyPrivacy</a>
+        (licensed under the EasyList License).
+      </p>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
